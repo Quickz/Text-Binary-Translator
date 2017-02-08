@@ -9,6 +9,8 @@
 	var output = document.getElementById("text-output");
 	var copy = document.getElementById("copy");
 	var swap = document.getElementById("swap");
+	var leftTitle = document.getElementById("left-title");
+	var rightTitle = document.getElementById("right-title");
 	var toBinary = true;
 
 
@@ -59,11 +61,24 @@
 	swap.onclick = function() {
 
 		toBinary = !toBinary;
+		swapTitles();
 		var text = output.innerHTML;
 		output.innerHTML = input.value;
 		input.value = text;
 
 	};
+
+
+	/**
+	 * swaps the titles of text and binary
+	 *
+	*/
+	function swapTitles()
+	{
+		var str = leftTitle.innerHTML;
+		leftTitle.innerHTML = rightTitle.innerHTML;
+		rightTitle.innerHTML = str;
+	}
 
 
 	/**
