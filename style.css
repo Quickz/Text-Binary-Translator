@@ -50,6 +50,7 @@ body {
 #swap:hover {
 	background: #ff6669;
 	color: #fefefe;
+	cursor: pointer;
 }
 
 #copy {
@@ -64,6 +65,7 @@ body {
 #copy:hover {
 	background: #3c7777;
 	color: #fefefe;
+	cursor: pointer;
 }
 
 #text-output {
