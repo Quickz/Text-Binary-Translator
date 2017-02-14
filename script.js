@@ -4,7 +4,7 @@
 	/**
 	 * global values
 	 *
-	*/
+	 */
 	var input = document.getElementById("text-input");
 	var output = document.getElementById("text-output");
 	var copy = document.getElementById("copy");
@@ -17,7 +17,7 @@
 	/**
 	 * input field edit event
 	 *
-	*/
+	 */
 	input.oninput = function() {
 
 		var text = input.value;
@@ -35,7 +35,7 @@
 	/**
 	 * copies all of the output content
 	 *
-	*/
+	 */
 	copy.onclick = function() {
 
 		if (document.selection)
@@ -57,7 +57,7 @@
 	/**
 	 * swaps input, output content
 	 * and turns the conversion the other way
-	*/
+	 */
 	swap.onclick = function() {
 
 		toBinary = !toBinary;
@@ -72,7 +72,7 @@
 	/**
 	 * swaps the titles of text and binary
 	 *
-	*/
+	 */
 	function swapTitles()
 	{
 		var str = leftTitle.innerHTML;
@@ -84,7 +84,7 @@
 	/**
 	 * returns binary value of a string
 	 *
-	*/
+	 */
 	function GetBinary(text)
 	{
 		var output = "";
@@ -100,7 +100,7 @@
 	/**
 	 * returns string value of a binary
 	 *
-	*/
+	 */
 	function GetText(text)
 	{
 		text = text.split(" ");
